@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Stringify.js</title>
+</head>
+
+<body>
+    <script src="Stringify.js"></script>
+    <script>
+        console.log(Stringify.stringify({
+            a: '1',
+            b: 1,
+            c: 1.0,
+            d: true,
+            e: null,
+            f: void 0,
+            g: {
+                x: 0,
+                y: 0,
+                z: 0
+            },
+            h: [0x0f, 0x1f, 0x2f, () => false],
+            i: Symbol('h'),
+            j: () => true
+        }));
+    </script>
+</body>
+
+</html>
