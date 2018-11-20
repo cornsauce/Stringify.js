@@ -267,11 +267,12 @@ if (typeof define === 'function') {
             return Stringify.stringify(value);
         })
     }
-    if(typeof module === 'object') {
-        module.exports = {
-            stringify: function(value) {
-                return Stringify.stringify(value);
-            }
+}
+
+if(typeof module === 'object') {
+    module.exports = {
+        stringify: function(value) {
+            return Stringify.stringify(value);
         }
     }
 }
